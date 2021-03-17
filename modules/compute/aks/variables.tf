@@ -26,3 +26,10 @@ variable "docker-cidr" {
   type = string
 }
 
+variable "vm-size" {
+  type = string
+}
+
+variable "dns-name" {
+  type = string
+}

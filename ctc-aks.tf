@@ -18,6 +18,15 @@ variable "docker-cidr" {
   type = string
 }
 
+variable "dns-name" {
+  type = string
+}
+
+variable "aks-vm-size" {
+  type = string
+}
+
+
 module "aks" {
   source = ".//modules/compute/aks"
   aks-rg-name = var.aks-rg-name
@@ -27,4 +36,6 @@ module "aks" {
   dns-ip = var.dnsip
   docker-cidr = var.docker-cidr
   service-cidr = var.service-cidr
+  vm-size = var.aks-vm-size
+  dns-name = var.dns-name
 }

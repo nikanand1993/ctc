@@ -32,4 +32,6 @@ aks-rg-name = "trial-compute-rg2"
 dnsip = "10.240.0.10"
 docker-cidr = "172.17.0.1/16"
 service-cidr = "10.240.0.0/16"
+dns-name = "ctcaks"
+aks-vm-size = "Standard_B2MS"
 
