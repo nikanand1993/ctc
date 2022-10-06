@@ -60,6 +60,10 @@ jobs:
       - name: Checkout PR branch
         uses: actions/checkout@v2
 
+      - name: run list command for diff
+        run: |
+          ls
+
       # Generate an Infracost diff and save it to a JSON file.
       - name: Generate Infracost diff
         run: |
