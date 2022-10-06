@@ -56,6 +56,10 @@ jobs:
                               --terraform-var-file=values.tfvars \
                               --out-file=infracost-base.json
 
+      - name: run list command before diff
+        run: |
+          ls .
+
       # Checkout the current PR branch so we can create a diff.
       - name: Checkout PR branch
         uses: actions/checkout@v2
