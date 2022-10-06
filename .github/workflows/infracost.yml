@@ -53,7 +53,7 @@ jobs:
         run: |
           infracost breakdown --path=${TF_ROOT} \
                               --format=json \
-                              --terraform-var-file=values.tfvar \s
+                              --terraform-var-file=values.tfvars \
                               --out-file=infracost-base.json
 
       # Checkout the current PR branch so we can create a diff.
