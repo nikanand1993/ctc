@@ -17,7 +17,7 @@ subnets = [{
 
 vm-rg-name = "trial-compute-rg"
 vm-name = "trial-vm"
-vm-size = "Standard_F2s"
+vm-size = "Standard_F4s"
 cache = "ReadWrite"
 storage-type = "Standard_LRS"
 
